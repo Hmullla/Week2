@@ -1,0 +1,18 @@
+.turnToBlue {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: #8a3815;
+    padding: 10px;
+}
+
+section {
+    text-align: center;
+}
+
+body {
+    background-color: #c24d1b;
+    color: white;
+}
