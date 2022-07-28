@@ -36,15 +36,13 @@ html {
     padding:50px;
   }
   
-  .social {
+  /* .social {
     flex-grow: 1;
-    width: 25%;
   }
   
   li {
     flex-grow: 2;
-    width: 50%;
-  }
+  } */
   
   /* Flex Container */
   .flex-nav ul {
@@ -52,20 +50,34 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
     
   }
   
+  .flex-nav ul li {
+    flex-grow: 1;
+  }
   
   @media all and (max-width:1000px) {
-  
+    .flex-nav ul li{
+      width: 50%;
+    }
+    .flex-nav .social {
+      width: 25% ;
+    }
+
   }
   
   @media all and (max-width:500px) {
     
+    .flex-nav ul li{
+      width: 100%;
+    }
+    .flex-nav .social {
+      width: 25% ;
+    }
   
   }
-  
